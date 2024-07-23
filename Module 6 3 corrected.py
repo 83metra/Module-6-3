@@ -1,19 +1,15 @@
 class Horse:
     x_distance = 0        # пройденный путь
-    __sound = 'Frrr'  # отсюда наследование не происходит, используется _sound
-    def __init__(self):
-        super().__init__() # наследование dx из Pegasus
-        # sound = 'Frrr' # отсюда наследование не происходит
+    __sound = 'Frrr'  
+    
     def run(self):
         self.x_distance += self.dx
         return self.x_distance
 
 class Eagle:
-    y_distance = 0                            # высота полёта
-    sound = 'I train, eat, sleep, and repeat!' # звук, который издаёт орёл (отсылка) \ отсюда идёт наследование
+    y_distance = 0                             # высота полёта
+    sound = 'I train, eat, sleep, and repeat!' # звук, который издаёт орёл (отсылка)
 
-    def __init__(self):
-        super().__init__()
     def fly(self):
         self.y_distance += self.dy
         return self.y_distance
