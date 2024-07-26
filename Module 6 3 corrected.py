@@ -3,7 +3,7 @@ class Horse:
     def __init__(self):
         self.x_distance = 0  # пройденный путь
         self.sound =  'Frrr' # звук, который издаёт лошадь.
-        super().__init__()
+        super().__init__() # всё, что выше, передаётся в дочерний класс
 
     def run(self, dx):
         self.x_distance += dx
@@ -13,7 +13,7 @@ class Eagle:
     def __init__(self):
         self.y_distance = 0  # пройденный путь
         self.sound =  'I train, eat, sleep, and repeat!'  # звук, который издаёт орёл (отсылка)
-        super().__init__()
+        super().__init__() всё, что выше, передаётся в дочерний класс
 
     def fly(self, dy):
         self.y_distance += dy
